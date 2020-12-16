@@ -1,0 +1,64 @@
+<!-- <p>weather works!</p>
+
+
+<h5>{{weather}}</h5>
+<h5>{{wind_speed}}</h5>
+<h5>{{temp}}</h5>
+<h5>{{pressure}}</h5>
+<h5>{{humidity}}</h5>
+<h5>{{wind_speed}}</h5>
+<h5>{{wind_dec}}</h5> -->
+<!-- <h5>{{weather}}</h5>  -->
+
+
+
+ 
+  <!-- <button (click)="setPreset()">Set preset</button> -->
+
+<div class="container d-flex justify-content-center">
+    
+    <div class="weather">
+        <div class="row  justify-content-center ">
+           
+            <div class=" col-md-8">
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      
+
+           
+                    <div class="d-flex justify-content-between">
+                    <input type="text"  formControlName="citySearch" class="form-control mr-2" id="inputPassword2" placeholder="Search">
+                      <button type="submit" class="btn btn-primary">Search</button>
+
+                    </div>
+                    
+                
+              
+              </form>
+                <div class="card"> 
+                    
+                    <span class="icon"><img class="img-fluid" src="{{imgWeather}}" /></span>
+                    <div class="title">
+                        <p>{{city}}</p>
+                    </div>
+                    <div class="temp">+{{temp}}<sup>&deg;</sup></div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="header">General</div>
+                            <div class="value">{{general}}</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="header">max</div>
+                            <div class="value">{{tempMax}}<sup>&deg;</sup></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="header">min</div>
+                            <div class="value">{{tempMin}}<sup>&deg;</sup></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

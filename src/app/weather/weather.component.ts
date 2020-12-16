@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Weather } from '../models/Weather.model';
+import { WeatherService } from '../services/weatherService.service';
 
 @Component({
   selector: 'app-weather',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeatherComponent implements OnInit {
 
+
   constructor() { }
 
+  weatherWeek: Weather[];
   ngOnInit() {
+
   }
 
 }
